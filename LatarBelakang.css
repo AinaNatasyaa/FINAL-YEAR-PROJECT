@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f5f0f0;
+}
+
+.header{
+    height: 350px;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/bckgrd.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    top: 30px;
+    position: relative;
+    left: 50px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    margin-top: 185px;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Main Menu Styles */
+#main-menu-horizontal {
+    background-color: #333;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+#main-menu-horizontal li {
+    width: 100%;
+    position: relative;
+}
+
+#main-menu-horizontal li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 10px 20px;
+    position: relative;
+}
+
+
+/* Submenu Styles */
+.submenu-horizontal {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 200px;
+    z-index: 1;
+    top: 100%; /* Position the submenu below the parent item */
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submenu-horizontal li {
+    display: block;
+}
+
+.submenu-horizontal li a {
+    color: #fff;
+    padding: 10px 20px;
+    white-space: nowrap; /* Prevent submenu items from wrapping */
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Submenu */
+#main-menu-horizontal li:hover .submenu-horizontal,
+#main-menu-horizontal li.clicked .submenu-horizontal {
+    display: block;
+}
+
+/* Submenu Hover Effect */
+.submenu-horizontal li:hover a {
+    background-color: #ff5733; /* Change the background color on hover */
+    color: #fff;
+}
+
+.koop-img {
+    width: 800px;
+    height: 450px;
+    position: relative;
+    left: 250px;
+    top: 130px;
+}
+
+/* Style the content */
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+/*PENGENALAN*/
+.box1 {
+    padding: 20px;
+    background-color: #fff;
+    position: absolute;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 150px;
+    text-align: justify; /* Justify text for better readability */
+    line-height: 1.6;
+    width: 1000px;
+    height: 200px;
+    top: 1000px;
+}
+
+/*VISI*/
+.box2 {
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    background-color: rgba(103, 66, 31, 0.94);
+    color:white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    left: 700px;
+    top: 260px;
+    text-align: center;
+}
+
+/*MISI*/
+.box3 {
+    padding: 50px;
+    width: 500px;
+    height: 290px;
+    position: relative;
+    background-color: rgba(103, 66, 31, 0.94);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 60px;
+    top: 350px;
+    text-align: center;
+}
+
+/* Hover effect for box4 */
+.box2:hover {
+    background-color: rgba(147, 110, 77, 0.94); /* Change the background color on hover */
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Hover effect for box3 */
+.box3:hover {
+    background-color: rgba(147, 110, 77, 0.94);
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.box2 h2, .box3 h2 {
+    color: black; /* Red color for headings */
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+.visi-img{
+
+    width: 350px;
+    height: 300px;
+    position: relative;
+    color:black;
+    right: 650px;
+    top: 900px;
+}
+
+.misi-img{
+
+    width: 350px;
+    height: 300px;
+    position: relative;
+    color:black;
+    left: 850px;
+    top: 1070px;
+}
+
+/*footer*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+    top: 500px;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
